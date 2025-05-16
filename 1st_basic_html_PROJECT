@@ -1,1 +1,212 @@
-html file first project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Mega Mart</h1>
+    <h3>Your complete shopping destination</h3>
+    <br>
+    <ul>
+        <li> <a href="home.html">Home</a></li>
+        <li> <a href="electronics.html">Electronics</a></li>
+        <li> <a href="fashion.html">fashion</a></li>
+        <!-- <li> <a href="books.html">books</a></li> -->
+        <!-- <li> <a href="cart.html">cart</a></li> -->
+        <li> <a href="contact.html">Contact</a></li>
+    </ul>
+    <br>
+    <h3>Products Search</h3>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Search products..." />
+        <button type="submit">Search</button>
+      </form>
+      <br>
+      <h3>Featured Products</h3>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Product </th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p><img src="https://t3.ftcdn.net/jpg/00/91/07/82/360_F_91078252_i7cx2uJzDzgoJGDdUAHtVAcpjugVauX9.jpg" width="50" height="50"><br> <b> Wireless headphones </b></p>
+                </td>
+            <td>premium noise cancelling bluetooth headphones <br><ul><li>40 mm drivers</li><li>30-hour battery</li><li>ipx 4 water prrof</li></ul></td>
+            <td><p>
+                 <s>$199</s><br> <u> $149</u>
+              </p>
+              </td>
+            <td>    In stock</td>
+            <td><button>Add to cart</button><br><p>available quantities</p></td>
+          </tr>
+          <tr>
+                <td colspan="5"><hr></td>
+          </tr>
+          <tr>
+            <td><img src="https://dablew.pk/wp-content/uploads/2024/02/Buy-Original-DIZO-Watch-Pro-Smart-Watch-in-Pakistan-at-Dab-Lew-Tech-5-510x510.webp" width="70"height="70"> </td>
+            <td>Advance fitness tracking smartwatch <br><ol><li>Heart rate detection</li><li>Gps tracking</li><li>water resist</li></ol></b></td>
+            <td>$89.99</td>
+            <td>Low stock</td>
+            <td><button>Add to cart</button</td>
+          </tr>
+        </tbody>
+      </table> <br>
+      <h1>Smart Watch Pro</h1>
+
+  <h2>Create New Account</h2>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      First Name: <input type="text" name="firstName">
+      Last Name: <input type="text" name="lastName"><br><br>
+      Date of Birth: <input type="date" name="dob">
+      Gender: 
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Account Details</legend>
+      Email: <input type="email" name="email">
+      Password: <input type="password" name="password"><br><br>
+      Phone Number: <input type="tel" name="phone">
+      <input type="checkbox" name="newsletter" checked> Subscribe to Newsletter
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Shipping Address</legend>
+      Street Address: <input type="text" name="address">
+      Country: <input type="text" name="country">
+      ZIP Code: <input type="text" name="zipcode">
+    </fieldset><br>
+
+    <button type="submit">Create Account / Clear Form</button>
+  </form>
+
+  <h2>Product Comparison</h2>
+  <table border="1">
+    <tr>
+      <th>Feature</th>
+      <th>Basic Model</th>
+      <th>Pro Model</th>
+      <th>Premium Model</th>
+    </tr>
+    <tr>
+      <td>Battery Life</td>
+      <td>18 hours</td>
+      <td>24 hours</td>
+      <td>36 hours</td>
+    </tr>
+    <tr>
+      <td>Water Resistance</td>
+      <td>IPX4</td>
+      <td>IPX6</td>
+      <td>IPX8</td>
+    </tr>
+    <tr>
+      <td>Warranty</td>
+      <td>1 year</td>
+      <td>2 years</td>
+      <td>3 years</td>
+    </tr>
+    <tr>
+      <td colspan="4">* All prices include VAT</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <h2>Checkout Process</h2>
+
+  <form>
+    <fieldset>
+      <legend>Payment Information</legend>
+      <label>Card Type:</label>
+      <input type="radio" name="cardType" id="visa"><label for="visa">Visa</label>
+      <input type="radio" name="cardType" id="mastercard"><label for="mastercard">MasterCard</label>
+      <input type="radio" name="cardType" id="amex" checked><label for="amex">American Express</label>
+      <br><br>
+      <label>Card Number: <input type="text" name="cardNumber"></label><br><br>
+      <label>Expiry Date: <input type="month" name="expiryDate" value="2023-01"></label>
+    </fieldset>
+
+    <br>
+
+    <h3>Order Summary:</h3>
+    <table border="1">
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Wireless Headphones</td>
+        <td>1</td>
+        <td>$299.00</td>
+      </tr>
+      <tr>
+        <td>Shipping</td>
+        <td>—</td>
+        <td>$11.60</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Total:</strong></td>
+        <td><strong>$310.60</strong></td>
+      </tr>
+    </table>
+
+    <br>
+    <button type="submit">Complete Purchase</button>
+  </form>
+
+    <h2>Product Video</h2>
+    <video width="500" height="360" controls>
+        <source src="2070043-hd_1920_1080_25fps.mp4" type="video/mp4">
+    
+      </video>
+    
+      <h2>Product Audio Description</h2>
+
+      <audio controls>
+        <source src="arab-idol.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      <h2>Contact Us</h2>
+
+     <p><b>Email:</b> <a href="mailto:tahirbhi21@gmail.com">tahirbhi21@gmail.com</a>
+        <br> <b>Phone:</b> <a href="+92-315237388">+92-315237388</a>
+        <br> <b>Address:</b><i>1 Main Street</i>  <br><i>SHAH FAISAL, sf 10001, PAKISTAN</i> <br>
+ <br>
+        our Location
+        <br> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14477.88725782067!2d67.15995166738284!3d24.881883101570423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339f288a87fa5%3A0x352039f82b108a78!2sShamsi%20Society%20Shah%20Faisal%20Colony%2C%20Shah%20Faisal%20Town%2C%20Pakistan!5e0!3m2!1sen!2s!4v1747371035946!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br> <br>
+        check out our latest video
+        <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kEs08wRCtNU?si=MKhYgNQPndWrj4CN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </p>
+
+     <h3>Quick Links</h3>
+  <ul>
+    <li><a href="Terms of service">Terms of service</a></li>
+    <li><a href="Privacy policy">Privacy Policy</a></li>
+    <li><a href="Reurn policy">Return Policy</a></li>
+  </ul>
+  <p>&copy; 2023 Megablen. All rights reserved.</p>
+  <p>Follow us on social media <br><a href="facebook.com">Mega Mart Facebook</a></p>
+
+
+
+
+</body>
+</html>
